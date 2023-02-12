@@ -46,7 +46,7 @@ function TodoList(props: TodoListType) {
     const onCompletedClickHandler = () => {
         props.FilterTasks('completed')
     }
-    const onChangeHandler = () => {}
+
 
 
     return (
@@ -65,8 +65,13 @@ function TodoList(props: TodoListType) {
                     const onRemoveHandler = () => {
                         props.RemoveTasks(t.id)
                     }
+                    const onChangeHandler = () => {}
                     return (
-                        <li key={v1()}><input type="checkbox" checked={t.isDone}/> <span>{t.title}</span>
+                        <li key={v1()}>
+                            <input type="checkbox"
+                                   onChange={onChangeHandler}
+                                   checked={t.isDone}/>
+                            <span>{t.title}</span>
                             <button onClick={onRemoveHandler}>x
                             </button>
                         </li>
