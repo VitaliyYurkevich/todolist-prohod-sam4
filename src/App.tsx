@@ -30,7 +30,8 @@ function App() {
         if(task){
         task.isDone = isDone
         }
-        setTasks(tasks)
+        let copy = [...tasks]
+        setTasks(copy)
     }
 
     const AddTasks = (title: string) => {
