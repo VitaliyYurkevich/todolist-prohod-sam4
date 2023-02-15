@@ -39,7 +39,7 @@ function App() {
         let task = {id: v1(), title: title, isDone: true}
         let NewTasks = [task, ...tasks]
         setTasks(NewTasks)
-        console.log('a')
+
     }
 
     let FilteredTask = tasks
