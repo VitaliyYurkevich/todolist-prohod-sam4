@@ -46,7 +46,7 @@ function TodoList(props: TodoListType) {
     const onCompletedClickHandler = () => {
         props.FilterTasks('completed')
     }
-    console.log('a')
+
 
 
     return (
