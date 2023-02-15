@@ -32,7 +32,7 @@ function App() {
         }
         let copy = [...tasks]
         setTasks(copy)
-        console.log('a')
+
     }
 
     const AddTasks = (title: string) => {
